@@ -1,0 +1,219 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header */
+.header {
+    background-color: #173b57;
+    color: white;
+    padding: 25px;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header img {
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 5px 0 0;
+}
+
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #173b57;
+    margin-top: 0;
+}
+
+
+/* Form */
+form {
+    display: grid;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+/* Negation pseudo-class */
+input:not([type="submit"]),
+select {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+
+/* Focus pseudo-class */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #173b57;
+    box-shadow: 0 0 5px rgba(23, 59, 87, 0.3);
+}
+
+
+/* Button */
+button {
+    background-color: #173b57;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #245b82;
+}
+
+
+/* Expense Table */
+.expenses-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Descendant selector */
+.expenses-section td,
+.expenses-section th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* Colored header row */
+.expenses-section thead {
+    background-color: #173b57;
+    color: white;
+}
+
+
+/* Position pseudo-class */
+.expenses-section tbody tr:nth-child(even) {
+    background-color: #f1f5f8;
+}
+
+
+/* Hover pseudo-class */
+.expenses-section tbody tr:hover {
+    background-color: #dceaf3;
+    cursor: pointer;
+}
+
+
+/* Instructions */
+.instructions-section details {
+    padding: 5px;
+}
+
+.instructions-section summary {
+    font-weight: bold;
+    color: #173b57;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.instructions-section p {
+    margin-left: 10px;
+}
+
+
+/* Multimedia */
+.multimedia-section {
+    text-align: center;
+}
+
+.multimedia-section iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #173b57;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 650px) {
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .expenses-section {
+        overflow-x: auto;
+    }
+
+    .expenses-section table {
+        min-width: 650px;
+    }
+
+    .multimedia-section iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
