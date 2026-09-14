@@ -815,4 +815,10 @@ footer p {
     footer {
         padding: 22px 15px;
     }
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 }
