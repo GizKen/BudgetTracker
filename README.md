@@ -1,141 +1,76 @@
 # My Budget Tracker
 
-## PLP Week 2 Assignment
+## PLP Week 3 – Design the Visual Identity of Your Budget Tracker
 
-This project is a simple personal Budget Tracker built using **HTML and CSS**.
+### Project Description
 
-The project builds on the Budget Tracker created in Week 1 and adds an expense table, an improved expense form, multimedia content, an interactive details section, and advanced CSS selectors.
+My Budget Tracker is a simple personal finance web application designed to help users record, organize, and review their daily expenses.
 
-## Features
+This project continues the Budget Tracker developed during the previous weeks of the PLP Software Engineering program. For Week 3, the main focus was improving the **visual identity, layout, typography, color palette, spacing, and overall user experience** of the application.
 
-### 1. Expense Table
+The goal was to transform the basic Week 2 interface into a more professional and visually consistent budget dashboard.
 
-The project contains a properly structured HTML table using:
+---
 
-* `<table>`
-* `<thead>`
-* `<tbody>`
-* `<tr>`
-* `<th>`
-* `<td>`
+## Week 3 Design Improvements
 
-The table contains four columns:
+### 1. Intentional Color Palette
 
-* Name
-* Amount
-* Category
-* Date
+The application uses a consistent financial-themed color palette.
 
-It also contains five sample expense records.
+* **Primary Navy:** `#173b57`
+* **Primary Light Blue:** `#245b82`
+* **Accent Teal:** `#2a9d8f`
+* **Light Background:** `#eef3f6`
+* **White Cards:** `#ffffff`
+* **Main Text:** `#263238`
+* **Muted Text:** `#64748b`
 
-The CSS includes:
-
-* Collapsed borders
-* Cell padding
-* Colored table headers
-* Alternating row colors
-* Hover effects
-
-### 2. Add Expense Form
-
-The Add Expense section contains a proper `<form>` element.
-
-The form includes:
-
-* Expense name input
-* Amount input
-* Category dropdown
-* Date input
-* Add Expense button
-
-The category dropdown contains:
-
-1. Food
-2. Transport
-3. Rent
-4. Entertainment
-5. Other
-
-Each input has a matching `id` attribute for future JavaScript functionality.
-
-### 3. Multimedia
-
-A budget tracker logo has been added using an `<img>` element with:
-
-* `src`
-* `alt`
-* `width`
-
-A relevant budgeting video has also been embedded using an `<iframe>` with:
-
-* `width`
-* `height`
-* `title`
-* `frameborder`
-
-### 4. Interactive Element
-
-A `<details>` and `<summary>` element provides a collapsible "How to use this tracker" section.
-
-The table rows also change appearance when the user moves the mouse over them.
-
-The Add Expense button uses `cursor: pointer`.
-
-### 5. Advanced CSS Selectors
-
-The project demonstrates several advanced CSS selectors:
-
-#### Descendant Selector
+CSS custom properties were used to make the color system consistent and easy to maintain.
 
 ```css
-.expenses-section td,
-.expenses-section th
+:root {
+    --primary: #173b57;
+    --primary-light: #245b82;
+    --accent: #2a9d8f;
+    --background: #eef3f6;
+    --card: #ffffff;
+}
 ```
 
-#### Position Pseudo-class
+---
 
-```css
-.expenses-section tbody tr:nth-child(even)
-```
+## 2. Typography
 
-#### Negation Pseudo-class
+The project uses Google Fonts to create a clear and professional visual hierarchy.
 
-```css
-input:not([type="submit"])
-```
+### Poppins
 
-#### Focus Pseudo-class
+Used mainly for:
 
-```css
-input:focus,
-select:focus
-```
+* Main headings
+* Section headings
+* Table headings
 
-#### Hover Pseudo-class
+### DM Sans
 
-```css
-.expenses-section tbody tr:hover
-```
+Used for:
 
-## Technologies Used
+* Body text
+* Labels
+* Form fields
+* Buttons
+* Table content
 
-* HTML5
-* CSS3
+This combination improves readability and gives the website a modern appearance.
 
-## Project Files
+---
 
-```text
-Budget-Tracker/
-│
-├── index.html
-├── style.css
-└── README.md
+## 3. Dashboard Layout
 
-## Future Improvements
+The Week 3 version introduces summary cards at the top of the application.
 
-JavaScript functionality can be added in future weeks to allow users to add expenses dynamically, calculate totals, and manage their budget.
+The dashboard displays:
 
-## Author
-
-Kenneth Cheruiyot
-
+* Total Expenses
+* Number of Expense Recor
